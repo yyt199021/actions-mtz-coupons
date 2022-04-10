@@ -32,7 +32,7 @@ jobs:
       - name: Run app
         run: yarn start
         env:
-          TOKEN: ${{0hY4oXdqglCA0Uc1Fqqm0ZyHK78AAAAAQREAAK9liSOp4P3ZuqGnxI7S6o_KW5CLc9yPkeeVkRp0TVO_fr1DtjBmgJUQ44SYuxGGmA }}
+          TOKEN: ${{secrets.TOKEN}}
           BARK_KEY: ${{ secrets.BARK_KEY }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
@@ -41,5 +41,5 @@ jobs:
           QMSG_ADMIN: ${{ secrets.QMSG_ADMIN }}
           QYWX_SEND_CONF: ${{ secrets.QYWX_SEND_CONF }}
           LARK_WEBHOOK: ${{ secrets.LARK_WEBHOOK }}
-          PUSHPLUS_TOKEN: ${{ f132623e2c1540c9944ef1e0946d3abf }}
+          PUSHPLUS_TOKEN: ${{secrets.PUSHPLUS_TOKEN }}
           DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
